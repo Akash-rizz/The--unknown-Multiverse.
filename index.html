@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#03040a">
+<title>THE UNKNOWN — 3D Science Observatory</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="boot"><div class="boot-logo">THE UNKNOWN</div><div class="boot-line"><span></span></div><div class="boot-meta">INITIALIZING 3D OBSERVATORY</div></div>
+<div id="hud">
+  <header class="topbar">
+    <div class="brand"><span class="brand-mark">◎</span><span>THE UNKNOWN</span><small>3D OBSERVATORY</small></div>
+    <nav id="nav">
+      <button data-view="home" class="active">HOME</button>
+      <button data-view="solar">SOLAR SYSTEM</button>
+      <button data-view="blackhole">BLACK HOLE</button>
+      <button data-view="dna">DNA</button>
+      <button data-view="quantum">QUANTUM</button>
+      <button data-view="ai">AI CORE</button>
+    </nav>
+    <button id="menu">☰</button>
+  </header>
+
+  <aside class="left-panel">
+    <div class="eyebrow">LIVE SCENE</div>
+    <h1 id="sceneTitle">THE UNKNOWN</h1>
+    <p id="sceneText">A living 3D map of ideas we can observe, model and still fail to fully explain.</p>
+    <div class="readouts">
+      <div><span>MODE</span><b id="mode">OBSERVATORY</b></div>
+      <div><span>OBJECTS</span><b id="objects">—</b></div>
+      <div><span>STATUS</span><b class="live">● ONLINE</b></div>
+    </div>
+  </aside>
+
+  <div class="right-panel">
+    <button class="tool" id="auto">AUTO ORBIT <b>OFF</b></button>
+    <button class="tool" id="reset">RESET VIEW</button>
+    <button class="tool" id="quality">QUALITY <b>AUTO</b></button>
+  </div>
+
+  <div id="scene"></div>
+  <div id="hint">DRAG · ORBIT &nbsp;&nbsp; PINCH / WHEEL · ZOOM &nbsp;&nbsp; TAP OBJECTS · INSPECT</div>
+
+  <section id="homeOverlay" class="overlay">
+    <div class="hero">
+      <div class="eyebrow">PROJECT NEXUS // 3D SCIENCE</div>
+      <h2>WE KNOW.<br><i>WE DISCOVER.</i><br>WE DON'T KNOW.</h2>
+      <p>Enter a real-time 3D observatory built around space, life, quantum ideas and intelligence.</p>
+      <button class="primary" data-view="solar">ENTER THE OBSERVATORY <span>↗</span></button>
+    </div>
+    <div class="quick">
+      <button data-view="solar"><b>01</b> SOLAR SYSTEM <span>→</span></button>
+      <button data-view="blackhole"><b>02</b> BLACK HOLE <span>→</span></button>
+      <button data-view="dna"><b>03</b> DNA / LIFE <span>→</span></button>
+      <button data-view="quantum"><b>04</b> QUANTUM <span>→</span></button>
+      <button data-view="ai"><b>05</b> AI CORE <span>→</span></button>
+    </div>
+  </section>
+
+  <div id="inspect" class="inspect hidden">
+    <button id="closeInspect">×</button>
+    <div class="eyebrow" id="inspectTag">OBJECT</div>
+    <h3 id="inspectName">—</h3>
+    <p id="inspectText">—</p>
+    <div class="fact" id="inspectFact">—</div>
+  </div>
+
+  <footer>AKASH // THE UNKNOWN · EDUCATIONAL 3D MODELS · <span id="fps">— FPS</span></footer>
+</div>
+<script type="module" src="script.js"></script>
+</body>
+</html>
